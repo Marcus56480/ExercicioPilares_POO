@@ -4,6 +4,6 @@ namespace Exercicios_Csharp
     {
         public double Distancia { get; set; }
 
-        public abstract void CalcularFrete(double distancia);
+        public abstract decimal CalcularFrete();
     }
 }

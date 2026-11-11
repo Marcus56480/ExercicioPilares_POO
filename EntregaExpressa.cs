@@ -2,10 +2,11 @@ namespace Exercicios_Csharp
 {
     public class EntregaExpressa : Entrega
     {
-        public override void CalcularFrete(double distancia)
+        public override decimal CalcularFrete()
         {
-            Distancia = distancia;
-            Console.WriteLine($"Valor do frete: {0.2 * Distancia:C}");
+            // Console.WriteLine($"Valor do frete: {0.2 * Distancia:C}");
+
+            return (decimal)Distancia * 0.2m;
         }
     }
 }

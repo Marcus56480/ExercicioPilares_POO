@@ -45,30 +45,18 @@ n2.Enviar();
 n3.Enviar();
 n4.Enviar();
 
-//TODO: Implementar list com objetos
-// EntregaEconomica e2 = new EntregaEconomica();
-// e2.CalcularFrete(10);
+List<Entrega> lista = new List<Entrega>();
 
-// RetiradaLocal e3 = new RetiradaLocal();
-// e3.CalcularFrete(10);
-
-// List<double> Entrega = new List<double>();
-
-// Entrega.Add(EntregaExpressa);
-// Entrega.Add(20);
-// Entrega.Add(30);
-
-// EntregaExpressa e1 = new EntregaExpressa();
-// e1.CalcularFrete(Entrega[0]);
-
-// EntregaEconomica e2 = new EntregaEconomica();
-// e2.CalcularFrete(Entrega[1]);
+lista.Add(new EntregaExpressa { Distancia = 10 });
+lista.Add(new EntregaEconomica { Distancia = 10 });
+lista.Add(new RetiradaLocal { Distancia = 10 });
 
 
-// foreach (var item in Entrega)
-// {
 
-// }
+ foreach (var item in lista)
+ {
+    Console.WriteLine(item.CalcularFrete());
+ }
 
 Contrato ctr1 = new Contrato();
 ctr1.Imprimir();
