@@ -6,7 +6,7 @@ namespace Exercicios_Csharp
         {
             // Console.WriteLine($"Valor do frete: {0.2 * Distancia:C}");
 
-            return (decimal)Distancia * 0.2m;
+            return (decimal)Distancia * 0.20m;
         }
     }
 }

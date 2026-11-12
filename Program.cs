@@ -55,7 +55,7 @@ lista.Add(new RetiradaLocal { Distancia = 10 });
 
  foreach (var item in lista)
  {
-    Console.WriteLine(item.CalcularFrete());
+    Console.WriteLine($"{item.CalcularFrete():C}");
  }
 
 Contrato ctr1 = new Contrato();
